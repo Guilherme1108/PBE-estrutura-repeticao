@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:  rgb(107, 3, 43);
+    color: white;
+    gap: 20px;
+}
+
+h1 {
+    padding-top: 24px;
+    font-size: 5rem;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+    font-size: 2rem;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+}
+
+div {
+    font-size: 3rem;
+}
+
