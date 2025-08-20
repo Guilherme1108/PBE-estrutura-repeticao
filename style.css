@@ -33,5 +33,7 @@ button {
 
 div {
     font-size: 3rem;
+    background-color: #0003;
+    border-radius: 12px;
 }
 
