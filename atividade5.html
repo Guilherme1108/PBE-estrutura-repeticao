@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 5</title>
 </head>
-<body>
 
+<body>
     <h1>Fazendo uma tabuada</h1>
+    <input type="number" id="multiplicador">
+    <button id="button">Calcular</button>
+    <div id="container"></div>
 
     <script>
-        valor = prompt('Informe qual tabuada você quer calcular: ')
-        let i = 1
-        while(Number(i) <= 10) {
-            console.log(i + ' X ' + valor + " = " + (i * valor))
-            i++
+
+        const botaoCalcular = document.getElementById('button')
+
+        function calcular() {
+
+            const resultado = document.getElementById('container')
+            resultado.innerHTML = ''
+
+            //calculo
+            const valor = document.getElementById('multiplicador').value
+            let i = 1
+            while (Number(i) <= 10) {
+
+                const tabuada = document.createElement('p')
+
+
+
+                let conta = (valor + ' X ' + i + " = " + (valor * i))
+                i++
+
+                tabuada.textContent = conta
+                resultado.appendChild(tabuada)
+
+
+            }
         }
+
+        botaoCalcular.addEventListener('click', calcular)
+
+
 
 
 
     </script>
-    
+
 </body>
+
 </html>
